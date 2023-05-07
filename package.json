@@ -4,13 +4,14 @@
   "description": "Web server with Node.js",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js --port=5555"
+    "test": "node server.js --port=5555",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/comp426-2023-spring/a01-aidanbh.git"
   },
-  "author": "aidanbh",
+  "author": "@aidanbh",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/comp426-2023-spring/a01-aidanbh/issues"
