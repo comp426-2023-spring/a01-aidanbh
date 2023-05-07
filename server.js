@@ -20,10 +20,17 @@ const port = (minimist['port'] || process.env.PORT || 3000)
 // The function must read a file located at `./public/index.html` and do some stuff with it.
 // The stuff that should be inside this function is all below.
 
+fs.readFile('public/index.html', 'utf8', (err, data) => {
+  if (err) {
+    // If there is an error, put it on the console error and return. 
+    // Do not be nice about exiting.
+    console.error(err);
+    return;
+  }
+
+  console.log(data);
 
 
-// If there is an error, put it on the console error and return. 
-// Do not be nice about exiting.
 
 
 
@@ -45,5 +52,5 @@ const port = (minimist['port'] || process.env.PORT || 3000)
 
 
 
-
+});
 // That's it! You're all done!
